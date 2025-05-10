@@ -3,9 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Aurora Norlund</title>
+    <meta name="description" content="This serves as the home page for Aurora Norlund's GitHub Pages site for the BYU-I class WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Aurora Norlund">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD131</h1>
+    <header>
+        <div class="title">
+            <h1>WDD 131: Dynamic Web Fundamentals - Aurora Norlund</h1>
+        </div>
+        <nav>
+            <ul class = "navigation">
+                <li><a href="https://linkedin.com/in/aurora-n" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com" title="Canvas">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/pgp/abr/3?lang=eng" title="Scripture">Scripture</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card" id="about">
+            <h2>About Me</h2>
+            <img src="images/me1.jpg" alt="Aurora Norlund portrait photograph" id="portrait">
+            <p id="bio">
+                My name is Aurora. I was born in California and lived in Nebraska for a time, but I currently live in Arizona. I currently work as a secretary at a flooring company where they also are having me help with some of their marketing efforts. I love reading, and my favorite book is Pride and Prejudice. I also love to go country swing dancing, and started learning this February.
+            </p>
+            <h3>Arizona</h3>
+            <hr id="line">
+            <img src="images/flag.jpg" alt="Arizona Flag" id="flag">
+            <div id="caption">Arizona State Flag</div>
+            <p id="state">
+                Arizona is the 48th state in the United States of America and is located in the southwest. It is known for the Grand Canyon and its deserts and mountains. Arizona is one of only two states that does not observe Daylight Savings Time. The "5 C's" of Arizona's economy are copper, cattle, cotton, citrus, and climate.
+            </p>
+        </section>
+        <section class="card" id="resources">
+            <h2>Web Dev Resources</h2>
+            <ul id="links">
+                <li><a href="https://www.w3schools.com/" title="W3 Schools">W3 Schools</a></li>
+                <li><a href="https://squoosh.app/" title="Squoosh">Squoosh</a></li>
+                <li><a href="https://stackoverflow.com/questions" title="Stack Overflow">Stack Overflow</a></li>
+                <li><a href="https://github.com/" title="Github">Github</a></li>
+                <li><a href="https://fonts.google.com/" title="Google Fonts">Google Fonts</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" title="MDN Web Docs">MDN Web Docs</a></li>
+                
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Aurora Norlund, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
 </body>
 </html>
