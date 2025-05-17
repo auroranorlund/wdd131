@@ -27,7 +27,7 @@ nav {
     font-family: 'Alice', serif;
     font-size: 1.15rem;
 }
-#title {
+h1 {
     font-size: 2.3rem;
     color: white;
     padding-left: 15px;
@@ -69,7 +69,7 @@ main {
     margin: 0 auto;
     text-align: center;
 }
-main h1 {
+h2 {
     padding: 10px;
     font-size: 2.4rem;
 }
