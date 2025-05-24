@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Temples Page - Aurora Norlund</title>
+    <meta name="description" content="This serves as the temples page for Aurora Norlund's GitHub Pages site for the BYU-I class WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Aurora Norlund">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Germany</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+            <source srcset="images/germany-hero-large.webp" media="(min-width: 1300px)">
+            <img src="images/germany-hero-small.webp" alt="German city" width="500" height="750">
+            </picture>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 357,596 sq km</li>
+                <li><strong>Population:</strong> 84,139,277</li>
+                <li><strong>Capital:</strong> Berlin</li>
+                <li><strong>Language:</strong> German</li>
+                <li><strong>Currency:</strong> Euro</li>
+                <li><strong>Time Zone:</strong> GMT+2</li>
+                <li><strong>Calling Code:</strong> +49</li>
+                <li><strong>Internet TLD:</strong> .de</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="weather">
+            <h2>Weather</h2>
+            <img src="images/rainy-icon.svg" alt="Rainy cloud icon">
+            <ul>
+                <li>Temperature: <span id="temperature"></span>°C</li>
+                <li>Conditions: <span id="conditions"></span></li>
+                <li>Wind: <span id="wind"></span>km/h</li>
+                <li>Wind Chill: <span id="chill"></span>°C</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Aurora Norlund, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>

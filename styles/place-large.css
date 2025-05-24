@@ -1,0 +1,37 @@
+@media (min-width: 1300px) {
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .hero {
+        position: relative;
+    }
+    hr {
+        display: none;
+    }
+    .data, .weather {
+        background-color: rgba(255, 255, 255, 0.952);
+        width: 300px;
+        position: absolute;
+    }
+    .data {
+        top: 13rem;
+        left: 2rem;
+    }
+    .weather {
+        top: 45rem;
+        right: 2rem;
+    }
+    h2 {
+        background-color: #F6BF6C;
+        color: white;
+        text-align: left;
+        padding: 10px;
+    }
+    .weather img {
+        display: none;
+    }
+    .weather h2::after{
+        content: " 🌧️";
+    }
+}

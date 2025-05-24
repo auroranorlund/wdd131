@@ -1,0 +1,56 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1, h2 {
+    font-family: 'Playfair', serif;
+    font-weight: 550;
+}
+h1 {
+    font-size: 2.7rem;
+    background-color: #D9756C;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    width: 100vw;
+}
+body {
+    font-family: 'Alice', serif;
+}
+header {
+    background-color: #F6BF6C;
+}
+main {
+    margin: 0 auto;
+    text-align: center;
+}
+.hero {
+    width: 100vw;
+    background-color: #F6BF6C;
+    padding-top: 1rem;
+}
+.data, .weather {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+.data ul, .weather ul {
+    list-style: none;
+    padding: 0.5rem;
+    line-height: 1.7;
+}
+hr {
+    border-top: 1px solid #1c20245d;
+}
+.weather img {
+     width: 75px;
+     height: auto;
+     align-self: center;
+}
+footer {
+    background-color: #D9756C;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
