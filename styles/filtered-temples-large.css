@@ -1,0 +1,12 @@
+@media (min-width: 37.5em) {
+#menu {
+    display: none;
+}
+.navigation {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.navigation a {
+    display: block;
+}
+}
