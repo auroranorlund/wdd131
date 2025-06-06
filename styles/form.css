@@ -1,0 +1,96 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #0339A6;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 1.5rem;
+}
+h1, h2 {
+    font-family: 'Playfair', serif;
+    font-weight: 550;
+}
+body {
+    font-family: 'Alice', serif;
+}
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+form {
+    display: block;
+    background-color: #dddddd;
+    padding: 10px;
+    appearance: none;
+}
+label {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+form input[type="date"],
+form select,
+form input[type="textarea"]
+{
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 600px;
+    appearance: none;
+    margin-bottom: 5px;
+}
+form input[type="radio"],
+form input[type="checkbox"]
+{
+    margin-right: 6px;
+}
+div {
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.required {
+    color: red;
+    font-weight: normal;
+}
+.optional {
+    color: blue;
+    font-weight: normal;
+}
+#writtenReview {
+    min-height: 200px;
+}
+form input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+.productOptions {
+    text-transform: capitalize;
+}
+.reviewPage {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 1.5;
+}
+footer {
+    background-color: #0339A6;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+    min-height: 15vh;
+    color: white;
+    font-size: 1.2rem;
+}
+.reviewFooter {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}

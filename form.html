@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="This serves as the form page for Aurora Norlund's GitHub Pages site for the BYU-I class WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Aurora Norlund">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+    <form method="get" action="review.html" class="wf1">
+        <label><div>Product Name<span class="required">*</span></div>
+        <select name="product" id="productName" required>
+            <option disabled selected>Select a product...</option>
+        </select>
+        </label>
+
+        <div>Rating<span class="required">*</span></div>
+            <label><input type="radio" name="rating" value="1" id="star1" required> &star;</label>
+            <label><input type="radio" name="rating" value="2" id="star2"> &star;&star;</label>
+            <label><input type="radio" name="rating" value="3" id="star3"> &star;&star;&star;</label>
+            <label><input type="radio" name="rating" value="4" id="star4"> &star;&star;&star;&star;</label>
+            <label><input type="radio" name="rating" value="5" id="star5"> &star;&star;&star;&star;&star;</label>
+
+        <label><div>Date of Installation</div>
+        <input type="date" name="installDate" id="installDate"></label>
+
+        <div>What features did you find useful in the product? <span id="checkAll">(Check all that apply)</span></div>
+        <label><input type="checkbox" name="durability" value="yes" id="durability"> Durability</label>
+        <label><input type="checkbox" name="ease of use" value="yes" id="ease"> Ease of Use</label>
+        <label><input type="checkbox" name="performance" value="yes" id="performance"> Performance</label>
+        <label><input type="checkbox" name="design" value="yes" id="design"> Design</label>
+
+        <label><div>Written Review <span class="optional">(Optional)</span></div>
+        <input type="textarea" id="writtenReview" name="writtenReview"></label>
+
+        <label><div>Your Name <span class="optional">(Optional)</span></div>
+        <input type="textarea" id="userName" name="userName"></label>
+        <input type="submit" value="Post Review">
+
+    </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> Aurora Norlund, USA</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+</html>
