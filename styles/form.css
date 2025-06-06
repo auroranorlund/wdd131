@@ -34,7 +34,8 @@ label {
 }
 form input[type="date"],
 form select,
-form input[type="textarea"]
+form input[type="text"],
+textarea
 {
     background-color: #eee;
     display: block;
@@ -52,7 +53,7 @@ form input[type="checkbox"]
 {
     margin-right: 6px;
 }
-div {
+.bold {
     padding-bottom: 5px;
     font-weight: bold;
 }

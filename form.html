@@ -18,33 +18,33 @@
     </header>
     <main>
     <form method="get" action="review.html" class="wf1">
-        <label><div>Product Name<span class="required">*</span></div>
+        <label><span class="bold">Product Name</span><span class="required">*</span>
         <select name="product" id="productName" required>
-            <option disabled selected>Select a product...</option>
+            <option value="" disabled selected>Select a product...</option>
         </select>
         </label>
 
-        <div>Rating<span class="required">*</span></div>
+        <div class="bold">Rating<span class="required">*</span></div>
             <label><input type="radio" name="rating" value="1" id="star1" required> &star;</label>
             <label><input type="radio" name="rating" value="2" id="star2"> &star;&star;</label>
             <label><input type="radio" name="rating" value="3" id="star3"> &star;&star;&star;</label>
             <label><input type="radio" name="rating" value="4" id="star4"> &star;&star;&star;&star;</label>
             <label><input type="radio" name="rating" value="5" id="star5"> &star;&star;&star;&star;&star;</label>
 
-        <label><div>Date of Installation</div>
+        <label><span class="bold">Date of Installation</span>
         <input type="date" name="installDate" id="installDate"></label>
 
-        <div>What features did you find useful in the product? <span id="checkAll">(Check all that apply)</span></div>
+        <div class="bold">What features did you find useful in the product? <span id="checkAll">(Check all that apply)</span></div>
         <label><input type="checkbox" name="durability" value="yes" id="durability"> Durability</label>
         <label><input type="checkbox" name="ease of use" value="yes" id="ease"> Ease of Use</label>
         <label><input type="checkbox" name="performance" value="yes" id="performance"> Performance</label>
         <label><input type="checkbox" name="design" value="yes" id="design"> Design</label>
 
-        <label><div>Written Review <span class="optional">(Optional)</span></div>
-        <input type="textarea" id="writtenReview" name="writtenReview"></label>
+        <label><span class="bold">Written Review</span> <span class="optional">(Optional)</span>
+        <textarea id="writtenReview" name="writtenReview"></textarea></label>
 
-        <label><div>Your Name <span class="optional">(Optional)</span></div>
-        <input type="textarea" id="userName" name="userName"></label>
+        <label><span class="bold">Your Name</span> <span class="optional">(Optional)</span>
+        <input type="text" id="userName" name="userName"></label>
         <input type="submit" value="Post Review">
 
     </form>
