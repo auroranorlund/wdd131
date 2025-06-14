@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fine Art Foundation Site Plan</title>
+    <meta name="description" content="This serves as the site plan for Aurora Norlund's final project for the BYU-I class WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Aurora Norlund">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/painting.css">
+    <script src="https://kit.fontawesome.com/072d754b9a.js" crossorigin="anonymous"></script>
+    <script src="scripts/scripts.js" defer></script>
+    <script src="scripts/painting.js" defer></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button id="menu" aria-label="Menu Button"></button>
+        <nav>
+            <ul class = "navigation">
+                <li><h1 id="title">The Fine Art Foundation</h1></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li><a href="painting.html" title="Painting of the Month">Painting of the Month</a></li>
+                <li><a href="join.html" title="Join the Foundation">Join the Foundation</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Painting of the Month</h2>
+        <div class="painting">
+            <div class="painting-image">
+                <picture>
+                    <source srcset="images/month-painting-large.webp" media="(min-width: 713px)">
+                    <source srcset="images/month-painting-medium.webp" media="(min-width: 600px)">
+                    <img src="images/month-painting-small.webp" alt="L'aurore, Mer du Nord," width="300" height="210">
+                </picture>
+                <h3>L'aurore, Mer du Nord, Guillaume Vogels, 1877</h3>
+            </div>
+            <div class="painting-p">
+                <p>Guillaume Vogels was a Belgian Impressionist painter who lived from 1836-1896. Due to a lack of personal record keeping and undated works, little is known about himself or his development as a painter. He was an apprentice to the Bellis Brothers, and his friend Périclès Pantazis introduced him to the works of French realist and impressionist artists, eventually teaching him to paint with palette knives. In 1870 he moved to Paris where he developed his personal style, and in 1880 he participated in the Paris Salon, marking a breakthrough in his career. While not much is known about <span class="italics">L'aurore, Mer du Nord</span> (meaning Dawn, North Sea), it is a beautiful depiction of the stillness of a simple dawn over the ocean.</p>
+            </div>
+        </div>
+        <div class="notes">
+            <label for="note">Personal Notes About the Painting of the Month: </label>
+            <p class="caption">(Note: these are stored locally in your browser and are not publicly visible)</p>
+	        <textarea id="note" placeholder="Enter text here"></textarea>
+	        <button type="submit" id="submit-note">Add Note</button>
+            <h4 id="note-list">My Previous Notes:</h4>
+	        <ul id="list"></ul>
+        </div>
+    </main>
+    <div class="container"></div>
+    <footer>
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="index.html" title="Home">Home</a></li>
+                    <li><a href="painting.html" title="Painting of the Month">Painting of the Month</a></li>
+                    <li><a href="join.html" title="Join the Foundation">Join the Foundation</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h4>Other Resources</h4>
+                <ul>
+                    <li><a href="https://commons.wikimedia.org/wiki/Main_Page" title="Wikimedia Commons">Wikimedia Commons</a></li>
+                    <li><a href="https://www.nga.gov/artworks/free-images-and-open-access" title="National Gallery of Art">National Gallery of Art</a></li>
+                    <li><a href="https://www.getty.edu/" title="Getty Museum">Getty Museum</a></li>
+                </ul>
+            </div>
+            <div class="ft-main-item">
+                <h4>Contact</h4>
+                <ul>
+                    <li>info@fineartfoundation.com</li>
+                    <li>(925)-314-9087</li>
+                    <li>1234 W Foxington Way, Philadelphia, PA, 19099</li>
+                </ul>
+            </div>
+        </section>
+        <section class="ft-social">
+        <ul class="ft-social-list">
+          <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        </section>
+        <section class="ft-copy">
+            <p><span id="currentyear"></span> Aurora Norlund, USA</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </section>
+    </footer>
+</body>
+</html>
